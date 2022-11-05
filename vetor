@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(void) {
+  int tam;
+    printf("\n Digite o tamanho: ");
+    scanf("%d",& tam);
+  int vetor[tam];
+  int metade= tam/2;
+  for(int i=metade;i<tam;i++)
+  { 
+    printf("\n Digite um numero: ");
+    scanf("%d",& vetor[i]);
+    
+  }
+  for(int i=0;i<metade;i++)
+    {
+      printf("\n Digite um numero: ");
+      scanf("%d",& vetor[i]);
+    }
+    int posicao;
+    printf("\n Qual posição você quer pesquisar? ");
+    scanf("%d",&posicao);
+    printf("\n%d",vetor[posicao]);
+
+    int localizar;
+      printf("\n Qual numero quer localizar? ");
+      scanf("%d",& localizar);
+        for (int i=0;i<tam;i++)
+          {
+            if(vetor[i]==localizar){
+               printf("\n Localizado!!");
+               break;
+             }
+           }   
+             
+      
+  return 0;
+}
